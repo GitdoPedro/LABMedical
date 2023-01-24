@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./paciente.component.scss']
 })
 export class PacienteComponent {
+  titulo = 'CADASTRO DE PACIENTE'
 
 }

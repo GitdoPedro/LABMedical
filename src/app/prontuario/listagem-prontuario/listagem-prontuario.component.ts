@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./listagem-prontuario.component.scss']
 })
 export class ListagemProntuarioComponent {
+  titulo = 'LISTAGEM DE PRONTUÁRIOS'
 
 }

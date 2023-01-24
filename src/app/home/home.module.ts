@@ -4,6 +4,7 @@ import { CommonModule } from '@angular/common';
 //Module Routing
 import { RoutingModule } from './routing.module';
 
+
 // modules
 import { CompartilhadosModule } from '../compartilhados/compartilhados.module';
 import { CadastroModule } from '../cadastro/cadastro.module';

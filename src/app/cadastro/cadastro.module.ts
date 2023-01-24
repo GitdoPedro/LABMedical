@@ -1,10 +1,32 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { RouterModule,Routes } from '@angular/router';
+
+
+//modules
+import { CompartilhadosModule } from '../compartilhados/compartilhados.module';
 
 //components
 import { PacienteComponent } from './paciente/paciente.component';
 import { ConsultaComponent } from './consulta/consulta.component';
 import { ExameComponent } from './exame/exame.component';
+
+
+
+const routes: Routes = [
+  {
+   path: 'paciente',
+   component: PacienteComponent
+  },
+  {
+    path: 'exame',
+    component: ExameComponent
+   },
+   {
+    path: 'consulta',
+    component: ConsultaComponent
+   }
+];
 
 
 
@@ -20,7 +42,10 @@ import { ExameComponent } from './exame/exame.component';
     PacienteComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    RouterModule.forChild(routes),
+    CompartilhadosModule,
+    
   ]
 })
 export class CadastroModule { }

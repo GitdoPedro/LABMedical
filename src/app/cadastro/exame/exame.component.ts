@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./exame.component.scss']
 })
 export class ExameComponent {
+  titulo = 'CADASTRO DE EXAME'
 
 }
