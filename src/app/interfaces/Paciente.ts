@@ -1,0 +1,22 @@
+export interface Paciente{
+    nome            : string;
+    genero          : string;
+    dataNascimento  : string;
+    cpf             : string;
+    rg              : string;
+    estadoCivil     : string;
+    telefone        : string;
+    email           : string;
+    naturalidade    : string;
+    convenio        : string;
+    numeroCarteira  : string;
+    validade        : string;
+    cep             : string;
+    cidade          : string;
+    estado          : string;
+    logradouro      : string;
+    numero          : string;
+    complemento     : string;
+    bairro          : string;
+    pontoReferencia : string
+}
