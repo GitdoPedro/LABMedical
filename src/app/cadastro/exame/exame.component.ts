@@ -7,5 +7,6 @@ import { Component } from '@angular/core';
 })
 export class ExameComponent {
   titulo = 'CADASTRO DE EXAME'
+  tituloContainer = 'Encontre o paciente'
 
 }

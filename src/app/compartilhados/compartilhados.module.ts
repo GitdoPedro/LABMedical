@@ -4,17 +4,20 @@ import { CommonModule } from '@angular/common';
 //components
 import { MenuLateralComponent } from './menu-lateral/menu-lateral.component';
 import { ToolbarComponent } from './toolbar/toolbar.component';
+import { ContainerComponent } from './container/container.component';
 
 
 
 @NgModule({
   declarations: [
     MenuLateralComponent,
-    ToolbarComponent
+    ToolbarComponent,
+    ContainerComponent
   ],
   exports:[
     MenuLateralComponent,
-    ToolbarComponent
+    ToolbarComponent,
+    ContainerComponent
   ],
   imports: [
     CommonModule

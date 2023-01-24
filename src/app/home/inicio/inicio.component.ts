@@ -6,6 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./inicio.component.scss']
 })
 export class InicioComponent {
-  titulo = 'ESTATÍSTICAS E INFORMAÇÕES'
+  titulo          = 'ESTATÍSTICAS E INFORMAÇÕES'
+  tituloContainer = 'Estatísticas do Sistema'
 
 }

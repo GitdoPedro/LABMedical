@@ -7,5 +7,6 @@ import { Component } from '@angular/core';
 })
 export class ListagemProntuarioComponent {
   titulo = 'LISTAGEM DE PRONTUÁRIOS'
+  tituloContainer = 'Utilize a barra de pesquisa para buscar'
 
 }

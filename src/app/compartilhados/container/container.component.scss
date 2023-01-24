@@ -1,0 +1,30 @@
+:host{
+    main{
+        position: absolute;
+        width: 1180px;
+        height: 962px;
+        left: 260px;
+        top: 62px;
+
+        background: #ceced2;
+
+        h1{
+            position: absolute;
+            width: 1116px;
+            height: 42px;
+            left: 32px;
+            top: 32px;
+
+            font-family: 'Anybody';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 32px;
+            line-height: 33px;
+            display: flex;
+            align-items: center;
+
+            color: #5C5F63;
+        }
+
+    }
+}
