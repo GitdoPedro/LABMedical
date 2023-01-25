@@ -10,6 +10,8 @@ import { CompartilhadosModule } from '../compartilhados/compartilhados.module';
 import { PacienteComponent } from './paciente/paciente.component';
 import { ConsultaComponent } from './consulta/consulta.component';
 import { ExameComponent } from './exame/exame.component';
+import { FormPacienteComponent } from './formulario/form-paciente/form-paciente.component';
+import { FormsModule } from '@angular/forms';
 
 
 
@@ -34,7 +36,8 @@ const routes: Routes = [
   declarations: [
     PacienteComponent,
     ConsultaComponent,
-    ExameComponent
+    ExameComponent,
+    FormPacienteComponent
   ],
   exports:[
     ConsultaComponent,
@@ -45,6 +48,7 @@ const routes: Routes = [
     CommonModule,
     RouterModule.forChild(routes),
     CompartilhadosModule,
+    FormsModule
     
   ]
 })

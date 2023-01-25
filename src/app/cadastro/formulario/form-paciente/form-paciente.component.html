@@ -1,0 +1,79 @@
+<form>
+    <fieldset>
+        <legend>Identificação</legend>
+        <label for="nome">Nome Completo</label>
+        <input [(ngModel)]="pacienteModelo.nome"   [ngModelOptions]="{standalone: true}" type="text" id="nome" minlength="8" maxlength="64" 
+               required 
+              
+               placeholder="Insira o nome completo" value="John">
+        <label for="genero">Gênero</label>
+        <select id="genero"  [(ngModel)]="pacienteModelo.genero" name="genero">
+            <option value="Masculino">Masculino</option>
+            <option value="Feminino" selected>Feminino</option>
+            <option value="Outro">Outro</option>
+        </select>
+        <label for="dataNascimento">Data Nascimento</label>
+        <input type="date" id="dataNascimento" [(ngModel)]="pacienteModelo.dataNascimento" name="dataNascimento">
+        <label for="email">E-Mail</label>
+        <input type="email" id="email" [(ngModel)]="pacienteModelo.email" name="email">
+        <label for="cpf" >CPF</label>
+        <input type="text" id ="rg" name="rg"  placeholder="000.000.000-00" [(ngModel)]="pacienteModelo.cpf" >
+        <label for="cpf" >RG</label>
+        <input type="text" name="cpf"  placeholder="00.000.000-00" [(ngModel)]="pacienteModelo.rg"  maxlength="20" id ="cpf" mask="000.000.000-00">
+        <label for="estadoCivil">Estado Civil</label>
+        <select id="estadoCivil"  [(ngModel)]="pacienteModelo.estadoCivil" name="estadoCivil">
+            <option value="Solteiro">Solteiro(a)</option>
+            <option value="Casado(a)" >Casado(a)</option>
+            <option value="Outro">Outro</option>
+        </select>
+        <label for="telefone">Telefone</label>
+        <input type="text" id="telefone" [(ngModel)]="pacienteModelo.telefone" placeholder="(00) 0 0000-0000" name="telefone">
+        <label for="contatoEmergencia">Contato de Emergência</label>
+        <input type="text" id="contatoEmergencia" [(ngModel)]="pacienteModelo.contatoEmergencia" placeholder="(00) 0 0000-0000" name ="contatoEmergencia">
+        <label for="naturalidade">Naturalidade</label>
+        <input type="text" id="naturalidade" [(ngModel)]="pacienteModelo.naturalidade" minlength="8" maxlength="64" name = "naturalidade">
+        <label for="alergia">Alergias</label>
+        <input type="text" id="alergia" [(ngModel)]="pacienteModelo.alergia" name = "alergia" >
+        <label for="cuidado">Cuidados Específicos</label>
+        <input type="text" id="cuidado" [(ngModel)]="pacienteModelo.cuidado"  name = "cuidado">
+        
+    </fieldset>
+
+    <fieldset>
+        <legend>Convênio</legend>
+        <label for="convenio">Convênio</label>
+        <input type="text" id="convenio"[(ngModel)]="pacienteModelo.convenio" name = "convenio">
+        <label for="numeroCarteira">Número da Carteira</label>
+        <input type="text" id="numeroCarteira"[(ngModel)]="pacienteModelo.numeroCarteira" name = "numeroCarteira">
+        <label for="validade">Validade</label>
+        <input type="date" id="validade" [(ngModel)]="pacienteModelo.validade" name = "validade">
+   
+    </fieldset>
+
+    <fieldset>
+        <legend>Dados de Endereço</legend>
+        <label for="cep">CEP</label>
+        <input type="text" id="cep" [(ngModel)]="pacienteModelo.cep" name = "cep">
+        <label for="cidade">Cidade</label>
+        <input type="text" id="cidade" [(ngModel)]="pacienteModelo.cidade" name = "cidade">
+        <label for="estado">Estado</label>
+        <input type="text" id="estado" [(ngModel)]="pacienteModelo.estado" name =  "estado">
+        <label for="logradouro">Logradouro</label>
+        <input type="text" id="logradouro" [(ngModel)]="pacienteModelo.logradouro" name = "logradouro">
+        <label for="numero">Número</label>
+        <input type="text" id="numero"[(ngModel)]="pacienteModelo.numero"  name = "numero">
+        <label for="complemento">Complemento</label>
+        <input type="text" id="complemento" [(ngModel)]="pacienteModelo.complemento" name = "complemento">
+        <label for="bairro">Bairro</label>
+        <input type="text" id="bairro" [(ngModel)]="pacienteModelo.bairro" name = "bairro">
+        <label for="pontoReferencia">Ponto de Referência</label>
+        <input type="text" id="pontoReferencia"[(ngModel)]="pacienteModelo.pontoReferencia"  name = "pontoReferencia">
+    </fieldset>
+    <div class="botoes">
+        <button (click)="salvarDados()">Salvar</button>
+        <button>Editar</button>
+        <button>Deletar</button>
+    </div> 
+
+</form>
+

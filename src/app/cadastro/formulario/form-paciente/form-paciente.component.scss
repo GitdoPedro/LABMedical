@@ -1,0 +1,47 @@
+:host{
+
+    form{
+        display:flex;
+        flex-direction: row;
+        position: absolute;
+        align-items: center;
+        width: 1118px;
+        height: 851px;
+        left: 300px;
+        top: 160px;
+        
+        background: #FFFFFF;
+        box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.35);
+        border-radius: 4px;
+        
+        fieldset{
+            
+            width: 50%;
+            border: 1px rgb(80, 73, 73) solid;
+            padding: 12px ;
+            margin : 6px;
+            
+
+            legend{
+                font-weight: bolder;
+            }
+           
+            input,select {
+                width: 100%;
+                padding: 12px 15px;
+                margin: 4px 0;
+                box-sizing: border-box
+              }
+        }
+
+        div{
+            
+            display: flex;
+            flex-direction: column;
+            align-content: space-between;
+        }
+    }
+
+
+
+}
