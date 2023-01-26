@@ -19,7 +19,8 @@ import { BarraBuscaComponent } from './barra-busca/barra-busca.component';
   exports:[
     MenuLateralComponent,
     ToolbarComponent,
-    ContainerComponent
+    ContainerComponent,
+    BarraBuscaComponent
   ],
   imports: [
     CommonModule

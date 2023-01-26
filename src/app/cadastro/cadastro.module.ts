@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule,Routes } from '@angular/router';
-
+import { FormsModule } from '@angular/forms';
 
 //modules
 import { CompartilhadosModule } from '../compartilhados/compartilhados.module';
@@ -11,7 +11,8 @@ import { PacienteComponent } from './paciente/paciente.component';
 import { ConsultaComponent } from './consulta/consulta.component';
 import { ExameComponent } from './exame/exame.component';
 import { FormPacienteComponent } from './formulario/form-paciente/form-paciente.component';
-import { FormsModule } from '@angular/forms';
+import { BarraBuscaComponent } from '../compartilhados/barra-busca/barra-busca.component';
+import { FormConsultaComponent } from './formulario/form-consulta/form-consulta.component';
 
 
 
@@ -37,7 +38,8 @@ const routes: Routes = [
     PacienteComponent,
     ConsultaComponent,
     ExameComponent,
-    FormPacienteComponent
+    FormPacienteComponent,
+    FormConsultaComponent
   ],
   exports:[
     ConsultaComponent,
