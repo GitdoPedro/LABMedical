@@ -5,6 +5,7 @@ import { CommonModule } from '@angular/common';
 import { MenuLateralComponent } from './menu-lateral/menu-lateral.component';
 import { ToolbarComponent } from './toolbar/toolbar.component';
 import { ContainerComponent } from './container/container.component';
+import { BarraBuscaComponent } from './barra-busca/barra-busca.component';
 
 
 
@@ -12,7 +13,8 @@ import { ContainerComponent } from './container/container.component';
   declarations: [
     MenuLateralComponent,
     ToolbarComponent,
-    ContainerComponent
+    ContainerComponent,
+    BarraBuscaComponent
   ],
   exports:[
     MenuLateralComponent,
