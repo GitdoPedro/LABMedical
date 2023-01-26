@@ -1,5 +1,6 @@
 import { Component,OnInit,Input } from '@angular/core';
 import { Paciente } from 'src/app/interfaces/Paciente';
+import { LocalStorageService } from 'src/app/services/local-storage.service';
 import { PacienteComponent } from '../../paciente/paciente.component';
 import { FormControl, Validators } from '@angular/forms';
 
@@ -12,8 +13,11 @@ import { FormControl, Validators } from '@angular/forms';
 })
 export class FormPacienteComponent {
   emEdicao: boolean = false;
-
-  pacientList: Paciente[] = []
+  
+  constructor(
+    private localStorage: LocalStorageService
+  ){}
+  
 
   pacienteModelo: any = {
     id: '',
@@ -110,7 +114,11 @@ export class FormPacienteComponent {
 
       if (mensagemErro.length > 0 ){
         alert("Não foi possível efetuar o cadastro pelos seguinte(s) motivo(s):\n" + mensagemErro)
+      }else{
+        this.salvarDados()
       }
+
+      
     }
 
     salvarDados() {
@@ -122,8 +130,9 @@ export class FormPacienteComponent {
         paciente.id = Date.now();
       }
       console.log(paciente)
+      this.localStorage.setPaciente(paciente)
       
-      this.validarDados()
+      
     
   }
 
