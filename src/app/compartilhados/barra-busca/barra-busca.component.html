@@ -1,5 +1,6 @@
 <div>
     <img src="../../../assets/logo-lupa.svg" alt="campo de busca"/>
-    <input type="text" id="txtBusca" placeholder="Digite o nome do paciente"/>
-    <button id="btnBusca">Buscar</button>
+    <input type="text" id="txtBusca" [(ngModel)] = "busca"  name = "busca" placeholder="Digite o nome do paciente ou o identificador cadastrado.
+    "/>
+    <button id="btnBusca" (click)="buscarPaciente()">Buscar</button>
   </div>

@@ -6,6 +6,7 @@ import { MenuLateralComponent } from './menu-lateral/menu-lateral.component';
 import { ToolbarComponent } from './toolbar/toolbar.component';
 import { ContainerComponent } from './container/container.component';
 import { BarraBuscaComponent } from './barra-busca/barra-busca.component';
+import { FormsModule } from '@angular/forms';
 
 
 
@@ -23,7 +24,8 @@ import { BarraBuscaComponent } from './barra-busca/barra-busca.component';
     BarraBuscaComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    FormsModule
   ]
 })
 export class CompartilhadosModule { }
