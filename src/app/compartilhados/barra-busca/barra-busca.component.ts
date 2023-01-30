@@ -22,8 +22,13 @@ export class BarraBuscaComponent {
     let pacienteFiltrado = pacientes.filter((value:any) =>{
       return  this.busca == value.id ||
         value.nome.toLowerCase().includes(this.busca) })
-    this.resultPaciente.emit(pacienteFiltrado)
-    console.log(pacienteFiltrado)
+    if (pacienteFiltrado.length == 0){
+      alert('Sua busca não encontrou resultados')
+      this.resultPaciente.emit(pacienteFiltrado)
+    }else{
+      this.resultPaciente.emit(pacienteFiltrado)
+      }
+    
     }
   }
 

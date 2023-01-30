@@ -1,5 +1,11 @@
 <app-toolbar [titulo] = "titulo"></app-toolbar>
 <app-menu-lateral></app-menu-lateral>
 <app-container [tituloContainer] = "tituloContainer"></app-container>
-<app-barra-busca></app-barra-busca>
-<app-form-consulta></app-form-consulta>
+<app-barra-busca  (resultPaciente)="PacientesBuscados($event)"></app-barra-busca>
+<app-form-consulta *ngIf="existeResultado" ></app-form-consulta>
+
+<select>
+    <option *ngFor = "let paciente of listaResultado;let i = index;">{{paciente[1].nome}}</option>
+
+</select>
+
