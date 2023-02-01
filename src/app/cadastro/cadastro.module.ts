@@ -13,6 +13,7 @@ import { ExameComponent } from './exame/exame.component';
 import { FormPacienteComponent } from './formulario/form-paciente/form-paciente.component';
 import { BarraBuscaComponent } from '../compartilhados/barra-busca/barra-busca.component';
 import { FormConsultaComponent } from './formulario/form-consulta/form-consulta.component';
+import { EscolhePacienteComponent} from '../compartilhados/escolhe-paciente/escolhe-paciente.component';
 
 
 
@@ -34,24 +35,24 @@ const routes: Routes = [
 
 
 @NgModule({
-  declarations: [
-    PacienteComponent,
-    ConsultaComponent,
-    ExameComponent,
-    FormPacienteComponent,
-    FormConsultaComponent
-  ],
-  exports:[
-    ConsultaComponent,
-    ExameComponent,
-    PacienteComponent
-  ],
-  imports: [
-    CommonModule,
-    RouterModule.forChild(routes),
-    CompartilhadosModule,
-    FormsModule
-    
-  ]
+    declarations: [
+        PacienteComponent,
+        ConsultaComponent,
+        ExameComponent,
+        FormPacienteComponent,
+        FormConsultaComponent
+    ],
+    exports: [
+        ConsultaComponent,
+        ExameComponent,
+        PacienteComponent
+    ],
+    imports: [
+        CommonModule,
+        RouterModule.forChild(routes),
+        CompartilhadosModule,
+        FormsModule,
+        
+    ]
 })
 export class CadastroModule { }

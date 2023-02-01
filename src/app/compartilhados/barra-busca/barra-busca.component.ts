@@ -1,7 +1,5 @@
 import { Component,EventEmitter,Input, Output } from '@angular/core';
 import { LocalStorageService } from 'src/app/services/local-storage.service';
-import { __values } from 'tslib';
-
 
 @Component({
   selector: 'app-barra-busca',

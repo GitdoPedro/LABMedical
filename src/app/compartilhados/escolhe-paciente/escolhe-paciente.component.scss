@@ -1,0 +1,31 @@
+:host{
+    select{
+
+        box-sizing: border-box;
+
+        position: absolute;
+        width: 934px;
+        height: 42px;
+        left: 300px;
+        top: 300px;
+
+        border: 1px solid #5C5F63;
+        border-radius: 4px;
+
+    }
+
+    button{ 
+        box-sizing: border-box;
+
+        position: absolute;
+        width: 154px;
+        height: 42px;
+        left: 1265px;
+        top: 300px;
+        
+        border: 1px solid #5C5F63;
+
+    }
+
+
+}

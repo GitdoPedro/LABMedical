@@ -129,7 +129,7 @@ export class FormPacienteComponent {
         paciente = this.pacienteModelo;
         paciente.id = Date.now();
       }
-      console.log(paciente)
+      
       this.localStorage.setPaciente(paciente)
       
       

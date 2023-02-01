@@ -1,0 +1,8 @@
+<div>
+    <select [(ngModel)] = "pacienteId">
+        <option *ngFor = "let paciente of listaResultado;let i = index;" value = {{paciente[1].id}}>{{paciente[1].nome}}</option>
+        
+    </select>
+    <button (click) = "cadastrarConsulta()" >Cadastrar Consulta</button>
+    </div>
+    
