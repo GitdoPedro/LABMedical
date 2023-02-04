@@ -14,12 +14,14 @@ import { ProntuarioModule } from '../prontuario/prontuario.module';
 import { LoginComponent } from './login/login.component';
 import { InicioComponent } from './inicio/inicio.component';
 import { EstatisticaComponent } from './inicio/estatistica/estatistica.component';
+import { CardPacienteComponent } from './inicio/card-paciente/card-paciente.component';
 
 @NgModule({
   declarations: [
     LoginComponent,
     InicioComponent,
-    EstatisticaComponent
+    EstatisticaComponent,
+    CardPacienteComponent
   ],
   imports: [
     CommonModule,

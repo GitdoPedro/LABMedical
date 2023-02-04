@@ -1,0 +1,28 @@
+<ul>
+    <li *ngFor = "let paciente of listaResultado;let i = index;">
+        <div>
+            <div class = "color">
+
+            </div>
+            <h1>
+
+            </h1>
+            <p class = "nome">
+                {{paciente[1].nome}}
+            </p>
+            <p class = "idade">
+                Data de Nascimento:
+                {{paciente[1].dataNascimento}}
+            </p>
+            <p class = "telefone">
+                {{paciente[1].telefone}}
+            </p>
+            <p  class = "plano"  >
+                {{paciente[1].plano}}
+            </p>
+
+        </div>   
+    </li>
+</ul>
+
+

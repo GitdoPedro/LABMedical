@@ -112,6 +112,10 @@ export class FormPacienteComponent {
         mensagemErro += "É necessário informar um bairro\n"
       }
 
+      if(!this.pacienteModelo.convenio){
+        this.pacienteModelo.convenio = "Sem Plano"
+      }
+
       if (mensagemErro.length > 0 ){
         alert("Não foi possível efetuar o cadastro pelos seguinte(s) motivo(s):\n" + mensagemErro)
       }else{
