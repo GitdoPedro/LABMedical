@@ -5,6 +5,9 @@ import { RouterModule, Routes } from '@angular/router';
 //components
 import { LoginComponent } from './login/login.component';
 import { InicioComponent } from './inicio/inicio.component';
+import { PacienteComponent } from '../cadastro/paciente/paciente.component';
+import { ExameComponent } from '../cadastro/exame/exame.component';
+import { ConsultaComponent } from '../cadastro/consulta/consulta.component';
 
 const routes: Routes = [
 
@@ -19,7 +22,25 @@ const routes: Routes = [
   {
     path: 'inicio',
     component: InicioComponent
-   }
+   },
+
+   {
+    path: 'paciente',
+    component: PacienteComponent
+   },
+
+   {
+    path: 'exame',
+    component: ExameComponent
+   },
+
+   {
+    path: 'consulta',
+    component: ConsultaComponent
+   },
+
+
+
 ];
 
 @NgModule({
