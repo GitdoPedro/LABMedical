@@ -3,6 +3,7 @@ import { Paciente } from 'src/app/interfaces/Paciente';
 import { PacienteComponent } from '../paciente/paciente.component';
 import { LocalStorageService } from 'src/app/services/local-storage.service';
 
+
 @Component({
   selector: 'app-consulta',
   templateUrl: './consulta.component.html',
@@ -13,8 +14,9 @@ export class ConsultaComponent {
   tituloContainer = 'Encontre o paciente'
   existeResultado = false
   listaResultado  :any
-  pacienteId: any
+  pacienteId: Number = 0
   nomePaciente: any 
+  
 
   constructor(
     private localStorage: LocalStorageService
@@ -24,17 +26,19 @@ export class ConsultaComponent {
     
     
     this.listaResultado  = resultado
-    
+    this.existeResultado = false
+    this.tituloContainer = 'Encontre o paciente'
  
   }
 
   recebeuPaciente(pacienteRecebido: any){
     if(pacienteRecebido){
-      this.pacienteId = pacienteRecebido
+      this.pacienteId = Number(pacienteRecebido)
       let pacienteProvisorio  = this.localStorage.getPaciente()
-      this.nomePaciente = Object.entries(this.localStorage.getPaciente()).find((item: any) => item[1].id === this.pacienteId)
-      console.log(this.pacienteId)
-      console.log(pacienteProvisorio[1])
+      this.nomePaciente = pacienteProvisorio.find((item: Paciente)  => item.id === this.pacienteId)
+      this.existeResultado = true
+      this.tituloContainer = this.nomePaciente.nome
+      
      
       
     }else{

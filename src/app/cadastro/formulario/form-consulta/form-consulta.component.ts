@@ -6,6 +6,10 @@ import { Component,Input } from '@angular/core';
   styleUrls: ['./form-consulta.component.scss']
 })
 export class FormConsultaComponent {
-  @Input() resultadoBusca: any = ''
+  @Input() pacienteId: Number = 0
+
+  ngOnChanges(){
+    console.log(this.pacienteId)
+  }
 
 }

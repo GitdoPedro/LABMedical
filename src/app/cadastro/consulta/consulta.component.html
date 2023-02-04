@@ -2,7 +2,10 @@
 <app-menu-lateral></app-menu-lateral>
 <app-container [tituloContainer] = "tituloContainer"></app-container>
 <app-barra-busca  (resultPaciente)="PacientesBuscados($event)"></app-barra-busca>
-<app-form-consulta *ngIf="existeResultado" ></app-form-consulta>
+<app-form-consulta 
+    *ngIf="existeResultado"
+    [pacienteId]="pacienteId">
+</app-form-consulta>
 <app-escolhe-paciente 
     *ngIf="!existeResultado"
     (pacienteEscolhido)="recebeuPaciente($event)"
