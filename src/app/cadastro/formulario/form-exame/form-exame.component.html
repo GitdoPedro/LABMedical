@@ -1,0 +1,27 @@
+<form>
+    <fieldset>
+        <nav>
+            <label for="nomeExame">Nome do Exame</label>
+            <input type="text"  minlength="8" maxlength="64"  name = "nomeExame" required>
+            <label for="dataExame">Data do Exame</label>
+            <input type="date" name = "dataExame" required>
+            <label for ="horaExame">Hora do Exame</label>
+            <input type = "time"  name = "horaExame" required> 
+            <label for="tipoExame">Tipo do Exame</label>
+            <input type="text"  minlength="4" maxlength="32"  name = "tipoExame" required>
+            <label for="Laboratorio">Laboratorio</label>
+            <input type="text"  minlength="4" maxlength="32"  name = "Laboratorio" required>
+            <label for="URLDocumentoExame">URL do Documento de Exame</label>
+            <input type="text"  name = "URLDocumentoExame" >
+        </nav>
+        <div>
+            <legend>Resultado do Exame</legend>
+            <input type = "textarea"  minlength="16" maxlength="1024" name = "ResultadoExame" required class = "resultado">
+        </div>
+    </fieldset>
+    <div class="botoes">
+        <button>Salvar</button>
+        <button>Editar</button>
+        <button>Deletar</button>
+    </div> 
+</form>

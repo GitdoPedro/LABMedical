@@ -1,4 +1,13 @@
 <app-toolbar [titulo] = "titulo"></app-toolbar>
 <app-menu-lateral></app-menu-lateral>
 <app-container [tituloContainer] = "tituloContainer"></app-container>
-<app-barra-busca></app-barra-busca>
+<app-barra-busca  (resultPaciente)="PacientesBuscados($event)"></app-barra-busca>
+<app-form-exame 
+    *ngIf="true"
+    >
+</app-form-exame>
+<app-escolhe-paciente 
+    *ngIf="!true"
+    (pacienteEscolhido)="recebeuPaciente($event)"
+    [resultado] = "listaResultado" >
+</app-escolhe-paciente>

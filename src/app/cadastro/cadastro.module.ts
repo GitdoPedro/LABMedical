@@ -14,6 +14,7 @@ import { FormPacienteComponent } from './formulario/form-paciente/form-paciente.
 import { BarraBuscaComponent } from '../compartilhados/barra-busca/barra-busca.component';
 import { FormConsultaComponent } from './formulario/form-consulta/form-consulta.component';
 import { EscolhePacienteComponent} from '../compartilhados/escolhe-paciente/escolhe-paciente.component';
+import { FormExameComponent } from './formulario/form-exame/form-exame.component';
 
 
 
@@ -40,7 +41,8 @@ const routes: Routes = [
         ConsultaComponent,
         ExameComponent,
         FormPacienteComponent,
-        FormConsultaComponent
+        FormConsultaComponent,
+        FormExameComponent
     ],
     exports: [
         ConsultaComponent,
