@@ -1,5 +1,6 @@
 import { Paciente } from '../interfaces/Paciente'
 import { Consulta } from '../interfaces/consulta'
+import { Exame } from '../interfaces/exame'
 import { Injectable } from '@angular/core';
 
 @Injectable({
@@ -9,9 +10,11 @@ export class LocalStorageService {
 
   CHAVE_PACIENTE: string = 'pacientes';
   CHAVE_CONSULTA: string = 'consultas';
+  CHAVE_EXAME   : string = 'exames';
 
   pacienteList: Paciente [] = []
   consultaList: Consulta [] = []
+  exameList   : Exame    [] = []
   constructor() { }
 
   getPaciente(){
@@ -42,5 +45,20 @@ export class LocalStorageService {
       this.CHAVE_CONSULTA, JSON.stringify(this.consultaList)
     );
     alert('consulta cadastrada com sucesso!');
+  }
+
+  getExame(){
+    let exameList = localStorage.getItem(this.CHAVE_EXAME);
+    return exameList ? JSON.parse(exameList) : []
+
+  }
+
+  setExame(exame: any) {
+    this.exameList = this.getConsulta();
+    this.exameList.push(exame);
+    localStorage.setItem(
+      this.CHAVE_EXAME, JSON.stringify(this.exameList)
+    );
+    alert('exame cadastrado com sucesso!');
   }
 }

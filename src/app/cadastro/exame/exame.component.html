@@ -3,11 +3,11 @@
 <app-container [tituloContainer] = "tituloContainer"></app-container>
 <app-barra-busca  (resultPaciente)="PacientesBuscados($event)"></app-barra-busca>
 <app-form-exame 
-    *ngIf="true"
+    *ngIf="existeResultado"
     >
 </app-form-exame>
 <app-escolhe-paciente 
-    *ngIf="!true"
+    *ngIf="!existeResultado"
     (pacienteEscolhido)="recebeuPaciente($event)"
     [resultado] = "listaResultado" >
 </app-escolhe-paciente>
