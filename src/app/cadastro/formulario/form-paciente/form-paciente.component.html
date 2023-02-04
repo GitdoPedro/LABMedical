@@ -5,7 +5,7 @@
         <input [(ngModel)]="pacienteModelo.nome"   [ngModelOptions]="{standalone: true}" type="text" id="nome" minlength="8" maxlength="64" 
                required 
               
-               placeholder="Insira o nome completo" value="John">
+               placeholder="Insira o nome completo">
         <label for="genero">Gênero</label>
         <select id="genero"  [(ngModel)]="pacienteModelo.genero" name="genero">
             <option value="Masculino">Masculino</option>
@@ -71,8 +71,7 @@
     </fieldset>
     <div class="botoes">
         <button (click)="validarDados()">Salvar</button>
-        <button>Editar</button>
-        <button>Deletar</button>
+        <input type="reset">
     </div> 
 
 </form>
