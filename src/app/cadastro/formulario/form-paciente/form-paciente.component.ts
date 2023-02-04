@@ -131,9 +131,7 @@ export class FormPacienteComponent {
       }
       
       this.localStorage.setPaciente(paciente)
-      
-      
-    
+         
   }
 
 

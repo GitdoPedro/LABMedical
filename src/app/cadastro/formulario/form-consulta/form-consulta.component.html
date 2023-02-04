@@ -2,27 +2,27 @@
     <fieldset>
         <nav>
             <label for="motivoConsulta">Motivo da Consulta</label>
-            <input type="text"  minlength="8" maxlength="64">
+            <input type="text"  minlength="8" maxlength="64" [(ngModel)]="consultaModelo.motivoConsulta" name = "motivoConsulta" required>
             <label for="dataConsulta">Data da Consulta</label>
-            <input type="date">
+            <input type="date" [(ngModel)]="consultaModelo.dataConsulta" name = "dataConsulta" required>
             <label for ="horaConsulta">Hora da Consulta</label>
-            <input type = "time">
+            <input type = "time" [(ngModel)]="consultaModelo.horaConsulta" name = "horaConsulta" required> 
         </nav>
     </fieldset>
     <fieldset>
         <legend>Descrição do Problema</legend>
-        <input type = "textarea"  minlength="16" maxlength="1024">
+        <input type = "textarea"  minlength="16" maxlength="1024" [(ngModel)]="consultaModelo.descricaoProblema" name = "descricaoProblema" required>
     </fieldset>
     <fieldset>
         <legend>Medicação Receitada</legend>
-        <input type = "textarea">
+        <input type = "textarea" [(ngModel)]="consultaModelo.medicacaoReceitada" name = "medicacaoReceitada">
     </fieldset>
     <fieldset>
         <legend>Dosagem e Precauções</legend>
-        <input type = "textarea" minlength="16" maxlength="256">
+        <input type = "textarea" minlength="16" maxlength="256" [(ngModel)]="consultaModelo.dosagemPrecaucoes" name = "dosagemPrecaucoes" required>
     </fieldset>
     <div class="botoes">
-        <button>Salvar</button>
+        <button (click)="validarDados()">Salvar</button>
         <button>Editar</button>
         <button>Deletar</button>
     </div> 
