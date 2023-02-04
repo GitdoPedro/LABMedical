@@ -13,11 +13,13 @@ import { ProntuarioModule } from '../prontuario/prontuario.module';
 //Paginas iniciais
 import { LoginComponent } from './login/login.component';
 import { InicioComponent } from './inicio/inicio.component';
+import { EstatisticaComponent } from './inicio/estatistica/estatistica.component';
 
 @NgModule({
   declarations: [
     LoginComponent,
-    InicioComponent
+    InicioComponent,
+    EstatisticaComponent
   ],
   imports: [
     CommonModule,
